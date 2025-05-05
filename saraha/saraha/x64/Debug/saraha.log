@@ -1,0 +1,34 @@
+﻿  Messages.cpp
+  Source.cpp
+C:\Users\ts\source\repos\saraha\saraha\Source.cpp(12,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ts\source\repos\saraha\saraha\Source.cpp(30,62): warning C4244: 'argument': conversion from '__int64' to 'WORD', possible loss of data
+C:\Users\ts\source\repos\saraha\saraha\Source.cpp(113,19): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\ts\source\repos\saraha\saraha\Source.cpp(116,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ts\source\repos\saraha\saraha\Source.cpp(151,31): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ts\source\repos\saraha\saraha\Source.cpp(157,26): warning C4244: '=': conversion from '_Ty1' to 'int', possible loss of data
+C:\Users\ts\source\repos\saraha\saraha\Source.cpp(157,26): warning C4244:         with
+C:\Users\ts\source\repos\saraha\saraha\Source.cpp(157,26): warning C4244:         [
+C:\Users\ts\source\repos\saraha\saraha\Source.cpp(157,26): warning C4244:             _Ty1=const __int64
+C:\Users\ts\source\repos\saraha\saraha\Source.cpp(157,26): warning C4244:         ]
+C:\Users\ts\source\repos\saraha\saraha\Source.cpp(163,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ts\source\repos\saraha\saraha\Source.cpp(255,46): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\ts\source\repos\saraha\saraha\Source.cpp(295,38): warning C4018: '<=': signed/unsigned mismatch
+C:\Users\ts\source\repos\saraha\saraha\Source.cpp(329,38): warning C4018: '<=': signed/unsigned mismatch
+C:\Users\ts\source\repos\saraha\saraha\Source.cpp(351,18): error C2664: 'void Messages::viewReceivedMessageFrom(int &,std::string &)': cannot convert argument 1 from 'std::string' to 'int &'
+      C:\Users\ts\source\repos\saraha\saraha\Messages.h(36,10):
+      see declaration of 'Messages::viewReceivedMessageFrom'
+      C:\Users\ts\source\repos\saraha\saraha\Source.cpp(351,18):
+      while trying to match the argument list '(std::string, std::string)'
+  
+C:\Users\ts\source\repos\saraha\saraha\Source.cpp(377,43): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\ts\source\repos\saraha\saraha\Source.cpp(379,43): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\ts\source\repos\saraha\saraha\Source.cpp(399,41): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\ts\source\repos\saraha\saraha\Source.cpp(405,34): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\ts\source\repos\saraha\saraha\Source.cpp(420,33): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\ts\source\repos\saraha\saraha\Source.cpp(454,29): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\ts\source\repos\saraha\saraha\Source.cpp(455,25): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\ts\source\repos\saraha\saraha\Source.cpp(467,31): warning C4018: '<': signed/unsigned mismatch
+  User.cpp
+C:\Users\ts\source\repos\saraha\saraha\User.cpp(232,17): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\ts\source\repos\saraha\saraha\User.cpp(236,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
