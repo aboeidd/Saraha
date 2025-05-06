@@ -240,23 +240,22 @@ void nextPage(int tempId)
         cout << "Enter receiver's username: ";
         getline(cin, receiverUsername);
 
-        if (!messages.is_username_regiter(receiverUsername, allUsers)) {
+        if (messages.is_username_regiter(receiverUsername, allUsers)) {
+            cout << "Enter your message: ";
+            getline(cin, content);
+
+            string senderUsername = currentUser.getName();
+            int senderid = currentUser.getId();
+            messages.sendMessage(senderUsername, senderid, receiverUsername, content, messages.registeredUsernames, allUsers);
+        }
+        else
+        {
             cout << "This username isn't registered.\n";
-            cout << "Press Enter to return to menu...";
+        }   
+            cout << "Press Enter to return to menu...\n";
             cin.get();
             nextPage(tempId);
-        }
         
-        cout << "Enter your message: ";
-        getline(cin, content);
-
-        string senderUsername = currentUser.getName();
-        int senderid = currentUser.getId();
-        messages.sendMessage(senderUsername, senderid, receiverUsername, content, messages.registeredUsernames, allUsers);
-
-        cout << "Press Enter to return to menu...";
-        cin.get();
-        nextPage(tempId);
     }
 
 
@@ -343,12 +342,13 @@ void nextPage(int tempId)
     }
 
     else if (choice == "6") {
-        string senderUsername;
-        cout << "Enter sender username to view received messages from: ";
-        getline(cin, senderUsername);
+        int senderid;
+        cout << "Enter sender id  to view received messages from: ";
+        cin >> senderid;
 
         string currentUsername = currentUser.getName();
-        messages.viewReceivedMessageFrom(senderUsername, currentUsername);
+        messages.viewReceivedMessageFrom(senderid, currentUsername);
+       
         cout << "Press Enter to return to menu...";
         cin.get();
         nextPage(tempId);

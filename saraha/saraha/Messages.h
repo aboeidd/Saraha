@@ -27,13 +27,13 @@ public:
     void viewSentMessages(string& currentUsername);
 
 private:
-    void viewReceivedMessagesFrom(string& viewerUsername, string& contactUsername);
+   /* void viewReceivedMessagesFrom(string& viewerUsername, string& contactUsername);*/
 
 public:
     void viewMyReceivedMessages(string& myUsername);
 
     vector<Message>& getSentMessages();
-    void viewReceivedMessageFrom(int& senderId, string& receiverUsername);
+    void viewReceivedMessageFrom(int senderId, string& receiverUsername);
 
     map<string, vector<Message>>& getReceivedMessages();
 

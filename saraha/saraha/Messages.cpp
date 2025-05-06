@@ -95,7 +95,7 @@ void Messages::viewSentMessages(string& currentUsername) {
     }
 }
 
-void Messages::viewReceivedMessageFrom(int& senderId, string& receiverUsername) {
+void Messages::viewReceivedMessageFrom(int senderId, string& receiverUsername) {
     auto it = receivedMessages.find(receiverUsername);
     if (it != receivedMessages.end()) {
         vector<Message>& msgs = it->second;
