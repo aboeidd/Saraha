@@ -195,6 +195,7 @@ void showMenu() {
     cout << "===========================\n";
 }
 int id = 0;
+
 unordered_map<int, User> users;
 void nextPage(int tempId)
 {
@@ -204,7 +205,7 @@ void nextPage(int tempId)
 
     static Messages messages; // Ensure persistence
     User& currentUser = users[tempId];
-
+    int ID;
     string choice;
     cout << "1. Profile\n";
     cout << "2. Send Message\n";
@@ -215,11 +216,12 @@ void nextPage(int tempId)
     cout << "7. Remove Oldest Favorite Message\n";
     cout << "8. View Favorite Messages\n";
     cout << "9. remove contacts\n";
-    cout << "10. view contacts Users List \n";
-    cout << "11. block user \n";
-    cout << "12. unblock user\n";
-    cout << "13. view Blocked Users List\n";
-    cout << "14. Log Out\n";
+    cout << "10.search about contact\n";
+    cout << "11. view contacts Users List \n";
+    cout << "12. block user \n";
+    cout << "13. unblock user\n";
+    cout << "14. view Blocked Users List\n";
+    cout << "15. Log Out\n";
     cout << "===========================\n";
 
     cin >> choice;
@@ -376,7 +378,7 @@ void nextPage(int tempId)
         currentUser.view_contact();
         if (!currentUser.getContacts().empty())
         {
-            int ID;
+            
             cout << "enter the id want to remove him\n ";
             cin >> ID;
 
@@ -388,10 +390,6 @@ void nextPage(int tempId)
             }
             cin.ignore();
         }
-
-       
-
-
         cout << "Press Enter to return to menu...";
        
         cin.get();
@@ -399,14 +397,30 @@ void nextPage(int tempId)
        
     }
     else if (choice == "10") {
+        
+        cout << " enter the contact is to want to search \n";
+        cin >> ID;
+        if (currentUser.contactExists(ID))
+        {
+            cout << "Contact with ID " << ID << " exists in your contact list." << endl;
+        }
+        else
+            cout << "Contact with ID " << ID << " was not found in your contact list." << endl;
+        cout << "Press Enter to return to menu...";
+        cin.ignore();
+        cin.get();
+        nextPage(tempId);
+
+    }
+    else if (choice == "11") {
         currentUser.view_contact();
         cout << "Press Enter to return to menu...";
         cin.get();
         nextPage(tempId);
 
    }
-    else if (choice == "11") {
-        int ID;
+    else if (choice == "12") {
+        
         cout << "enter the id want to blocked him \n";
         cin >> ID;
         if (!currentUser.is_id_register(ID, allUsers))
@@ -425,11 +439,11 @@ void nextPage(int tempId)
         nextPage(tempId);
 
     }   
-    else if (choice == "12") {
+    else if (choice == "13") {
         currentUser.view_user_is_blocked();
         if (!currentUser.getblockUser().empty())
         {
-            int ID;
+            
             cout << "enter the id want to unblocked him\n ";
             cin >> ID;
             currentUser.unBlock(ID);
@@ -442,7 +456,7 @@ void nextPage(int tempId)
         nextPage(tempId);
 
     }
-    else if (choice == "13"){
+    else if (choice == "14"){
         currentUser.view_user_is_blocked();
         cout << "Press Enter to return to menu...";
         cin.get();
@@ -451,7 +465,7 @@ void nextPage(int tempId)
 
     }
         
-    else if (choice == "14") {
+    else if (choice == "15") {
         cout << "Logging out...\n";
         return;
 
