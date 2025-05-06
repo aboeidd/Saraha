@@ -104,7 +104,7 @@ User registerUser(int id, unordered_map<int, User>& users) {
     while (true) {
         cin.ignore();
         cout << "Enter gender (M/F): ";
-        getline(cin, g);
+        cin >> g;
         if (g == "M" || g == "F" || g == "m" || g == "f") { newUser.setGender(g); break; }
         cout << "Invalid input. Only M or F allowed.\n";
     }
