@@ -1,0 +1,34 @@
+﻿  Contacts.cpp
+  Favorites.cpp
+  main.cpp
+C:\Users\ts\Documents\GitHub\Saraha\saraha\saraha2\main.cpp(12,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ts\Documents\GitHub\Saraha\saraha\saraha2\main.cpp(31,62): warning C4244: 'argument': conversion from '__int64' to 'WORD', possible loss of data
+C:\Users\ts\Documents\GitHub\Saraha\saraha\saraha2\main.cpp(114,19): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\ts\Documents\GitHub\Saraha\saraha\saraha2\main.cpp(117,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ts\Documents\GitHub\Saraha\saraha\saraha2\main.cpp(152,31): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ts\Documents\GitHub\Saraha\saraha\saraha2\main.cpp(158,26): warning C4244: '=': conversion from '_Ty1' to 'int', possible loss of data
+C:\Users\ts\Documents\GitHub\Saraha\saraha\saraha2\main.cpp(158,26): warning C4244:         with
+C:\Users\ts\Documents\GitHub\Saraha\saraha\saraha2\main.cpp(158,26): warning C4244:         [
+C:\Users\ts\Documents\GitHub\Saraha\saraha\saraha2\main.cpp(158,26): warning C4244:             _Ty1=const __int64
+C:\Users\ts\Documents\GitHub\Saraha\saraha\saraha2\main.cpp(158,26): warning C4244:         ]
+C:\Users\ts\Documents\GitHub\Saraha\saraha\saraha2\main.cpp(164,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ts\Documents\GitHub\Saraha\saraha\saraha2\main.cpp(253,50): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\ts\Documents\GitHub\Saraha\saraha\saraha2\main.cpp(298,38): warning C4018: '<=': signed/unsigned mismatch
+C:\Users\ts\Documents\GitHub\Saraha\saraha\saraha2\main.cpp(332,38): warning C4018: '<=': signed/unsigned mismatch
+C:\Users\ts\Documents\GitHub\Saraha\saraha\saraha2\main.cpp(354,42): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\ts\Documents\GitHub\Saraha\saraha\saraha2\main.cpp(385,43): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\ts\Documents\GitHub\Saraha\saraha\saraha2\main.cpp(387,43): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\ts\Documents\GitHub\Saraha\saraha\saraha2\main.cpp(403,39): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\ts\Documents\GitHub\Saraha\saraha\saraha2\main.cpp(426,41): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\ts\Documents\GitHub\Saraha\saraha\saraha2\main.cpp(432,34): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\ts\Documents\GitHub\Saraha\saraha\saraha2\main.cpp(449,33): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\ts\Documents\GitHub\Saraha\saraha\saraha2\main.cpp(494,29): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\ts\Documents\GitHub\Saraha\saraha\saraha2\main.cpp(495,25): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\ts\Documents\GitHub\Saraha\saraha\saraha2\main.cpp(507,31): warning C4018: '<': signed/unsigned mismatch
+  Message.cpp
+  Messages.cpp
+  User.cpp
+C:\Users\ts\Documents\GitHub\Saraha\saraha\saraha2\User.cpp(232,17): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\ts\Documents\GitHub\Saraha\saraha\saraha2\User.cpp(236,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
+  saraha2.vcxproj -> C:\Users\ts\Documents\GitHub\Saraha\saraha\x64\Debug\saraha2.exe
